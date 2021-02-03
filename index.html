@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ru">
 <head>
@@ -34,9 +33,9 @@
 
 
 .carousel-caption h2, .carousel-caption p {
-	color: #2F180F;
+	color: #0B1112;
 	display: inline-block;
-margin-bottom: 130px;
+margin-bottom: 50px;
 	font-family: 'Oswald', sans-serif;
 	text-shadow: none;
 
@@ -46,33 +45,76 @@ margin-bottom: 130px;
 
 }
 .carousel-caption h2 {
-	background: #fff;
+	background: #FFD300;
 	padding: 12px 24px;
 	font-size: 40px;
 	text-transform: uppercase;
-	opacity: 0.6;
+	opacity: 0.9;
 }
 .carousel-caption p {
-	background: #082C7E;
+	background: #0A20CC;
 	padding: 20px 20px;
 	font-size: 25px;
-opacity: 0.5;
+opacity: 0.9;
 margin-bottom: 150px;
 
 }
 .carousel .nav {
-	background: #fff;
+	background: #C1C6C7;
+
+
+ --mainColor: #C1C6C7;
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
 }
+.carousel .nav  :hover {
+  background-color: #FFD300;
+  --mainColor: #FFD300;
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+
+}
+
+
 .carousel .nav a {
-	color: #FF4900;
-	border-radius: 0;
-	font-size: 120%;
+	color: #0B1112;
+	border-radius: 2;
+	font-size: 135%;
 	padding: 10px 16px;
 	background: transparent;
+
+
+
+
+
+
+
+
+
+
+
 }
 .carousel .nav .active a {
 	color: #fff;
-	background: #082C7E;
+	background: #0A20CC;
+	--mainColor: #0A20CC;
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
 }
 .carousel .nav strong {
 	display: block;
@@ -88,6 +130,39 @@ margin-left: auto;
 margin-right: auto;
 background: #fff;
 padding: 10px;
+}
+
+
+
+
+
+
+
+
+a {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px
+     );
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: #000;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+ --mainColor: #130873;
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
 }
 
 
@@ -127,18 +202,18 @@ $(document).ready(function(){
 });
 </script>
 </head>
-<body>
+<body style="">
 <div class="wrapper">
 
 <br>
 
-<nav class="navbar navbar-expand-lg navbar navbar-light  sticky-top" style="background-color: #082C7E; text-white ">
+<nav class="navbar navbar-expand-lg navbar navbar-light sticky-top " style="background-color: #0A20CC; opacity: 0.8; ">
 <div class=" container-fluid" >
     <a href="#" class="navbar-brand">
-        <img src="https://wordassociations.net/image/600x/svg_to_png/boobaloo_Compass.png" height="25" alt="CoolBrand">
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Froza-vetrov.info%2FUploadedFiles%2FFCKEditor%2Fimage%2Fglobe.png&f=1&nofb=1" height="45" alt="Роза ветров">
     </a>
 
-        <a href="#" class="navbar-brand mr-3 text-white">Нёнокса_навигатор</a>
+        <a href="#" class="navbar-brand mr-3 text-light ">Нёнокса_навигатор</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -149,13 +224,13 @@ $(document).ready(function(){
 
 
             <div class="navbar-nav ml-auto ">
-            <a href="#" class="nav-item nav-link active text-white">Главная</a>
-                <a href="#" class="nav-item nav-link text-white">Новости</a>
-                <a href="#" class="nav-item nav-link text-white">Прогноз</a>
-                <a href="#" class="nav-item nav-link text-white">Расписание</a>
-                <a href="#" class="nav-item nav-link text-white">Информация</a>
-                <a href="#" class="nav-item nav-link text-white">Регистрация</a>
-                <a href="#" class="nav-item nav-link text-white">Вход</a>
+            <a href="#" class="nav-item nav-link active text-light ">Главная</a>
+                <a href="#" class="nav-item nav-link text-light">Новости</a>
+                <a href="#" class="nav-item nav-link text-light">Прогноз</a>
+                <a href="#" class="nav-item nav-link text-light">Расписание</a>
+                <a href="#" class="nav-item nav-link text-light">Информация</a>
+                <a href="#" class="nav-item nav-link text-light">Регистрация</a>
+                <a href="#" class="nav-item nav-link text-light">Вход</a>
             </div>
         </div>
 
@@ -168,7 +243,7 @@ $(document).ready(function(){
 
 <div class="container-lg">
 
-	<div class="row">
+
 
 
 
@@ -177,39 +252,40 @@ $(document).ready(function(){
  <div class="row">
             <div class="col-md-3">
                <ol class="nav flex-column">
-					<li data-target="#myCarousel" data-slide-to="0" class="nav-item active"><a href="#" class="nav-link"><strong>О проекте</strong>Дорожная карта площадки</a></li>
-					<li data-target="#myCarousel" data-slide-to="1" class="nav-item"><a href="#" class="nav-link"><strong>Новости села</strong>Анонсы ближайших экскурсий</a></li>
-                    <li data-target="#myCarousel" data-slide-to="2" class="nav-item"><a href="#" class="nav-link"><strong>Важней всего</strong> Узнай  прогноз</a></li>
-				<li data-target="#myCarousel" data-slide-to="3" class="nav-item"><a href="#" class="nav-link"><strong>Расписание поездов</strong> Nesciunt stumpown </a></li>
-                    <li data-target="#myCarousel" data-slide-to="4" class="nav-item"><a href="#" class="nav-link"><strong>Общая информация</strong>Визы контакты</a></li>
+					<li data-target="#myCarousel" data-slide-to="0" class="nav-item active"><a href="#" class="nav-link"><strong></strong>О ПРОЕКТЕ Дорожная карта площадки</a></li>
+					<li data-target="#myCarousel" data-slide-to="1" class="nav-item"><a href="#" class="nav-link"><strong></strong>НОВОСТИ СЕЛА Анонсы ближайших экскурсий</a></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class="nav-item"><a href="#" class="nav-link"><strong></strong>ВАЖНЕЙ ВСЕГО Узнай  прогноз</a></li>
+				<li data-target="#myCarousel" data-slide-to="3" class="nav-item"><a href="#" class="nav-link"><strong></strong>РАСПИСАНИЕ ПОЕЗДОВ</a></li>
+                    <li data-target="#myCarousel" data-slide-to="4" class="nav-item"><a href="#" class="nav-link"><strong></strong>ОБЩАЯ ИНФОРМАЦИЯ. Визы контакты</a></li>
 
                 </ol>
             </div>
             <div class="col-md-9">
 <div class="carousel-inner">
 					<div class="carousel-item active">
-                        <a href="#"><img src="https://cdn.pixabay.com/photo/2016/01/22/15/09/winter-1155941_960_720.jpg" class="img-fluid" alt="Notebook"></a>
+                        <a href="#"><img src="https://img1.goodfon.ru/wallpaper/nbig/9/eb/lapland-finland-laplandiya-4935.jpg" class="img-fluid" alt="Notebook"></a>
 						<div class="carousel-caption">
                             <a href="#"><h2>Amazing Digital Experience</h2></a>
                             <a href="#"><p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien bibendum.</p></a>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="https://sun9-75.userapi.com/impg/geFgVTKilTzxvm-tYML7UDvsJFW443bhw8ga5Q/eiR-iVGu660.jpg?size=1280x854&quality=96&proxy=1&sign=1575f5bdc9832325f43d60f48f30648b&type=album" class="img-fluid" alt="Tablet">
+						<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8b435b80850875.5ced59fda6f62.gif" class="img-fluid"  alt="Tablet">
 						<div class="carousel-caption">
 							<h2>Новости создаем вместе</h2>
 							<p>Просто напиши пост в группе Вконтакте</p>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="https://ramki-vsem.ru/fon/fon-nebo5.jpg" class="img-fluid" alt="Workstation">
+						<img src="https://www.neizvestniy-geniy.ru/images/works/photo/2012/03/578350_1.gif"  width=700 height=400 class="img-fluid" alt="Workstation">
 						<div class="carousel-caption">
 							<h2>Всегда.</h2>
 							<p>Что бы ни происходило вокруг - подумай об облаках...</p>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="https://wallbox.ru/resize/1440x900/wallpapers/main2/201744/150969236959fc13d164d777.41407575.jpg" class="img-fluid" alt="Report">
+<iframe src="https://gifer.com/embed/A3MV" width=700 height=400.800 frameBorder="0" allowFullScreen></iframe><p><a href="https://gifer.com">через GIFER</a></p>
+						<img src="" class="img-fluid" alt="Report">
 						<div class="carousel-caption">
 							<h2>РЖД</h2>
 							<p>Актуальное расписание поездов. Обновляется онлайн.</p>
@@ -241,9 +317,8 @@ $(document).ready(function(){
 
 
 
-
 			</div>
-		</div>
+
 	</div>
 </div>
 
@@ -273,9 +348,8 @@ $(document).ready(function(){
 <br>
 <br>
 
-     <div class="row">
 
-    </div>
+
 
     <footer>
         <div class="row">
@@ -291,6 +365,7 @@ $(document).ready(function(){
 
         </div>
     </footer>
+
 
 </body>
 </html>
