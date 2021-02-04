@@ -1,13 +1,6 @@
-
 <!doctype html>
 <html lang="ru">
 <head>
-	<script id="flamingo-switcher" type="text/javascript">!function(e,t,a,A){"use strict";if(a()){ A.loader&&(A.loader.style="<style id=\"flamingo-loader-style\">html{height:100%;}html:before{top:0;left:0;right:0;bottom:0;position:fixed;content:'';display:block;z-index:10000;background:fixed #fff url("+A.loader.image+") no-repeat center;}</style>",t.write('<meta name="viewport" content="width=device-width, initial-scale=1">'),t.write(A.loader.style)),t.write('<plaintext style="display:none">');var o=!1;try{o=localStorage}catch(i){}var n=3,r=function(){var a="[object Array]"==Object.prototype.toString.call(A.dataUrl)?A.dataUrl[0]:A.dataUrl,i=t.createElement("script"),l=t.getElementsByTagName("script")[0];i.src=a+"flamingo"+(t.evaluate?"":"-compat")+".js",i.id="flamingo-engine",i.charset="utf-8",i.onload=i.onreadystatechange=function(){if(!this.readyState||"loaded"===this.readyState||"complete"===this.readyState){try{var a=t.getElementById("flamingo-loader-style");a&&a.parentElement&&a.parentElement.removeChild(a),Flamingo.init(e,t,o,A)}catch(n){console.error("Unable to initialize Flamingo Engine",n)}try{i.onload=i.onreadystatechange=null,i.parentNode&&i.parentNode.removeChild(i)}catch(n){}}},i.onerror=function(){n--,l.parentNode.removeChild(i),n?("[object Array]"==Object.prototype.toString.call(A.dataUrl)&&(A.dataUrl.splice(0,1),A.dataUrl.push(a)),r()):0!==e.name.indexOf("flamingo")&&alert("Something is going wrong. Try to reload page.")},l.parentNode.insertBefore(i,l)};setTimeout(r)}}(window,document,function(){return"undefined"!=typeof Flamingo?!1:0===window.name.indexOf("flamingo")?!0:(function(u){return ((u.match(/(?:iPhone|iPod|iPad)|\((?:(?:Linux;.*Android)|Android)|Windows Phone|\((?:(?:Mobile|Tablet);.*rv:\d+)/i)))?!0:!1;})(navigator.userAgent)},{ loader:{image:"//cdn.mobilizetoday.ru/loader/big-circle-ball.gif"},dataUrl:"//cdn.mobilizetoday.ru/live/601a5d90f178f549f03e41e2/latest/"});</script>
-	
-	
-	
-	
-	
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -36,6 +29,9 @@
 	max-width: 100%;
     margin: 0 auto; /* Align slide image horizontally center in Bootstrap v3 */
 
+
+
+
 }
 
 
@@ -45,11 +41,6 @@
 margin-bottom: 50px;
 	font-family: 'Oswald', sans-serif;
 	text-shadow: none;
-
-
-
-
-
 }
 .carousel-caption h2 {
 	background: #FFD300;
@@ -173,8 +164,20 @@ a:hover {
 }
 
 
-
-
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
 
 
 
@@ -188,6 +191,12 @@ a:hover {
 $(document).ready(function(){
         $("#myCarousel").carousel();
 });
+
+
+
+
+
+
 </script>
     <script>
 $(document).ready(function(){
@@ -210,7 +219,20 @@ $(document).ready(function(){
 </script>
 </head>
 <body style="">
+
+
+
 <div class="wrapper">
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="#ebebeb" data-options="small,square,line,horizontal,counter,theme=07" data-services="bookmark,bobrdobr,googlebookmark,evernote,vkontakte,odnoklassniki,facebook,twitter,google,vkrugu,stumbleupon,delicious,surfingbird,pinme,tumblr,instapaper,moimir,moikrug,moemesto,email,yandex,springpad,webmoney,blogger,misterwong,digg,linkedin,formspring,readability,liveinternet,memori,yahoo,juick,myspace,livejournal,pinterest,yazakladki,webdiscover,friendfeed,print" data-url="https://el-not.github.io/severodvinsk/" data-title="Ненокса_навигатор" data-description="сайт жителей муниципального образования Ненокса"></div>
 
 <br>
 
@@ -302,7 +324,7 @@ $(document).ready(function(){
 					<div class="carousel-item">
 						<img src="https://fbm.ru/wp-content/uploads/2017/10/adr001-Custom.jpg" class="img-fluid" alt="Report">
 						<div class="carousel-caption">
-							<h3> телефоны, адреса</h3>
+							<h2> телефоны, адреса</h2>
 							<p>Особенности визового режима</p>
 						</div>
 					</div>
@@ -327,11 +349,14 @@ $(document).ready(function(){
 			</div>
 
 	</div>
-</div>
+
 
 <br>
 
-<nav class="nav nav-tabs">
+    <footer>
+
+
+<nav class="nav nav-tabs ">
     <a href="#" class="nav-item nav-link active">
         <i class="fa fa-home"></i> Home
     </a>
@@ -358,20 +383,16 @@ $(document).ready(function(){
 
 
 
-    <footer>
-        <div class="row">
-            <div class="col-md-6">
-                <p>Copyright &copy; 2019 Tutorial Republic</p>
-            </div>
-            <div class="col-md-6 text-md-right">
-                <a href="#" class="text-dark">Terms of Use</a>
-                <span class="text-muted mx-2">|</span>
-                <a href="#" class="text-dark">Privacy Policy</a>
-            </div>
 
-
-        </div>
     </footer>
+</div>
+
+
+
+
+
+
+
 
 
 </body>
